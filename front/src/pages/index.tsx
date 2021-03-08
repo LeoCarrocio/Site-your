@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           logo={'mi pagina'}
           posicionLogo={'lefth'}
           hight={'50 px'}
-          itemNav={['Contactos', 'Ayuda', 'Productos']}
+          itemNav={['Contactos', 'Ayuda', 'Productos', 'hola']}
           posicionNav={'derecha'}
           floatingHead={true}
         />
