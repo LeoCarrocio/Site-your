@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 // import Link from 'next/link'
 import { HeaderInterface } from '../../interface'
-import { Navegacion, Logo } from '../ui/header'
+import { Navegacion, Logo, Button } from '../ui/components'
 
 interface Heder {
   colorDeFondo: string
@@ -23,6 +23,7 @@ const HeaderTypeA: React.FC<HeaderInterface> = props => {
     <Containers colorDeFondo={props.backgraundColor}>
       <Logo titulo={props.logo} />
       <Navegacion links={props.itemNav} />
+      <Button />
     </Containers>
   )
 }
