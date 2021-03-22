@@ -26,6 +26,6 @@ const Containers = styled.button`
 `
 
 const Button: React.FC = () => {
-  return <Containers>hola</Containers>
+  return <Containers>Entrar</Containers>
 }
 export default Button

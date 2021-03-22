@@ -6,6 +6,7 @@ import { Navegacion, Logo, Button } from '../ui/components'
 
 interface Heder {
   colorDeFondo: string
+  height: string
 }
 
 const Containers = styled.div<Heder>`
@@ -16,14 +17,15 @@ const Containers = styled.div<Heder>`
   justify-items: center;
   align-items: center;
   background-color: ${props => props.colorDeFondo};
+  height: ${props => props.height};
 `
 
 const HeaderTypeA: React.FC<HeaderInterface> = props => {
   return (
-    <Containers colorDeFondo={props.backgraundColor}>
+    <Containers colorDeFondo={props.backgraundColor} height={props.hight}>
       <Logo titulo={props.logo} />
       <Navegacion links={props.itemNav} />
-      <Button />
+      {props.isButton && <Button />}
     </Containers>
   )
 }
