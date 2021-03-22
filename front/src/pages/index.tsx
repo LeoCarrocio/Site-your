@@ -19,7 +19,6 @@ const Home: React.FC = () => {
       const height = y >= 100 ? '100px' : '50px'
       setIsHeaderFijo(height)
 
-
       console.log(y)
     }
 
