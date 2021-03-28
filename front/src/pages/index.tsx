@@ -31,7 +31,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="contenedor">
-      <LayoutHead />
       <div ref={headerRef} className="header" style={{ position: 'fixed' }}>
         <LayoutHeder
           backgraundColor={'red'}

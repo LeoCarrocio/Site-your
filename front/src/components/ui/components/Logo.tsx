@@ -1,6 +1,6 @@
 import React from 'react'
 // import styled from 'styled-components'
-import { LogoInterface } from '../../../interface'
+import { LogoInterface } from '../interface'
 
 // const Container = styled.div``
 
