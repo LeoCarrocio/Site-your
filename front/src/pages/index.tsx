@@ -5,13 +5,15 @@ import {
   LayoutBody,
   LayoutFooter
 } from '../components/layout'
+import { usePosocionScroll } from '../custonHooks/intex'
 
 const Home: React.FC = () => {
   const [isHeaderFijo, setIsHeaderFijo] = useState<string>('100px')
   const headerRef = useRef()
   const bodyRef = useRef()
+  const posicion = usePosocionScroll(bodyRef)
 
-  useEffect(() => {
+  /* useEffect(() => {
     const handleScroll = () => {
       const refHeader = headerRef.current
       const refBody = bodyRef.current
@@ -27,6 +29,11 @@ const Home: React.FC = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
+  }, []) */
+
+  useEffect(() => {
+    const height = posicion >= 100 ? '100px' : '50px'
+    setIsHeaderFijo(height)
   }, [])
 
   return (
