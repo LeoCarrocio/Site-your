@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export const usePosocionScroll = (ref: any): number => {
+export const usePosicionScroll = (ref: any): number => {
   const [posicion, setPosicion] = useState<number | undefined>()
   useEffect(() => {
     const handleScroll = () => {

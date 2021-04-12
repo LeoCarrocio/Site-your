@@ -4,7 +4,7 @@ export interface HeaderInterface {
   textColor: string
   logo: string // logo en si
   posicionLogo: string
-  hight?: string // alto del heder
+  hight: string // alto del heder
   itemNav: string[] // las cantidades de li en el navegador
   posicionNav: string // su pocicion
   floatingHead: boolean // si el heder es flotante

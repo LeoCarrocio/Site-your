@@ -1,3 +1,3 @@
-import { usePosocionScroll } from './usePosocionScroll'
+import { usePosicionScroll } from './usePosicionScroll'
 
-export { usePosocionScroll }
+export { usePosicionScroll }
